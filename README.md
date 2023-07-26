@@ -5,7 +5,7 @@
 [![License][license-src]][license-href]
 [![Nuxt][nuxt-src]][nuxt-href]
 
-My new Nuxt module for doing amazing things.
+Easily import snippets in your Nuxt Content documents.
 
 - [✨ &nbsp;Release Notes](/CHANGELOG.md)
 <!-- - [🏀 Online playground](https://stackblitz.com/github/your-org/@phojie/@phojie/nuxt-content-snippet?file=playground%2Fapp.vue) -->
