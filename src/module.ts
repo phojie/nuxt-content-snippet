@@ -11,7 +11,7 @@ export interface ModuleOptions {
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: '@phojie/nuxt-content-snippet',
+    name: 'nuxt-content-snippet',
     configKey: 'nuxtContentSnippet',
   },
   defaults: {
@@ -20,7 +20,6 @@ export default defineNuxtModule<ModuleOptions>({
   setup(options, nuxt) {
     const { resolve } = createResolver(import.meta.url)
     const runtimeDir = resolve('./runtime')
-    nuxt.options.build.transpile.push(runtimeDir) // remove this later
 
     addServerPlugin(resolve(runtimeDir, 'snippet'))
   },

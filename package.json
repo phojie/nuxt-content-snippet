@@ -1,5 +1,5 @@
 {
-  "name": "@phojie/nuxt-content-snippet",
+  "name": "nuxt-content-snippet",
   "type": "module",
   "version": "0.0.0",
   "description": "Easily add code snippets to your Nuxt Content documents",

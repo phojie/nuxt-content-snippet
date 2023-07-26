@@ -8,7 +8,7 @@
 Easily import snippets in your Nuxt Content documents.
 
 - [✨ &nbsp;Release Notes](/CHANGELOG.md)
-<!-- - [🏀 Online playground](https://stackblitz.com/github/your-org/@phojie/@phojie/nuxt-content-snippet?file=playground%2Fapp.vue) -->
+<!-- - [🏀 Online playground](https://stackblitz.com/github/your-org/nuxt-content-snippet?file=playground%2Fapp.vue) -->
 <!-- - [📖 &nbsp;Documentation](https://example.com) -->
 
 ## Features
@@ -20,25 +20,25 @@ Easily import snippets in your Nuxt Content documents.
 
 ## Quick Setup
 
-1. Add `@phojie/nuxt-content-snippet` dependency to your project
+1. Add `nuxt-content-snippet` dependency to your project
 
 ```bash
 # Using pnpm
-pnpm add -D @phojie/nuxt-content-snippet
+pnpm add -D nuxt-content-snippet
 
 # Using yarn
-yarn add --dev @phojie/nuxt-content-snippet
+yarn add --dev nuxt-content-snippet
 
 # Using npm
-npm install --save-dev @phojie/nuxt-content-snippet
+npm install --save-dev nuxt-content-snippet
 ```
 
-2. Add `@phojie/nuxt-content-snippet` to the `modules` section of `nuxt.config.ts`
+2. Add `nuxt-content-snippet` to the `modules` section of `nuxt.config.ts`
 
 ```js
 export default defineNuxtConfig({
   modules: [
-    '@phojie/nuxt-content-snippet'
+    'nuxt-content-snippet'
   ]
 })
 ```
@@ -72,14 +72,14 @@ npm run release
 ```
 
 <!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/v/@phojie/nuxt-content-snippet/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
-[npm-version-href]: https://npmjs.com/package/@phojie/nuxt-content-snippet
+[npm-version-src]: https://img.shields.io/npm/v/nuxt-content-snippet/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
+[npm-version-href]: https://npmjs.com/package/nuxt-content-snippet
 
-[npm-downloads-src]: https://img.shields.io/npm/dm/@phojie/nuxt-content-snippet.svg?style=flat&colorA=18181B&colorB=28CF8D
-[npm-downloads-href]: https://npmjs.com/package/@phojie/nuxt-content-snippet
+[npm-downloads-src]: https://img.shields.io/npm/dm/nuxt-content-snippet.svg?style=flat&colorA=18181B&colorB=28CF8D
+[npm-downloads-href]: https://npmjs.com/package/nuxt-content-snippet
 
-[license-src]: https://img.shields.io/npm/l/@phojie/nuxt-content-snippet.svg?style=flat&colorA=18181B&colorB=28CF8D
-[license-href]: https://npmjs.com/package/@phojie/nuxt-content-snippet
+[license-src]: https://img.shields.io/npm/l/nuxt-content-snippet.svg?style=flat&colorA=18181B&colorB=28CF8D
+[license-href]: https://npmjs.com/package/nuxt-content-snippet
 
 [nuxt-src]: https://img.shields.io/badge/Nuxt-18181B?logo=nuxt.js
 [nuxt-href]: https://nuxt.com
