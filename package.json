@@ -29,12 +29,12 @@
     "build:dev": "nuxi generate playground",
     "prepack": "nuxt-module-build",
     "dev": "nuxi dev playground",
-    "dev:prepare": "nuxt-module-build --stub && nuxi prepare dev",
-    "release": "bumpp package.json dev/package.json && pnpm -r publish",
+    "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground",
+    "release": "bumpp package.json playground/package.json && pnpm -r publish",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "typecheck": "nuxi typecheck",
-    "prepare": "nuxi prepare dev"
+    "prepare": "nuxi prepare playground"
   },
   "dependencies": {
     "@nuxt/kit": "^3.6.5"
