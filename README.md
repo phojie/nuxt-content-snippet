@@ -7,9 +7,9 @@
 
 Easily import snippets in your Nuxt Content documents.
 
-- [✨ &nbsp;Release Notes](/CHANGELOG.md)
-<!-- - [🏀 Online playground](https://stackblitz.com/github/your-org/nuxt-content-snippet?file=playground%2Fapp.vue) -->
-<!-- - [📖 &nbsp;Documentation](https://example.com) -->
+- [✨ &nbsp;Release Notes](https://github.com/phojie/nuxt-content-snippet/releases)
+- [🏀 Online playground](https://stackblitz.com/github/phojie/nuxt-content-snippet?file=playground%content/index.md)
+- [📖 &nbsp;Documentation](#usage)
 
 ## Features
 
