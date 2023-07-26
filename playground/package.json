@@ -1,6 +1,7 @@
 {
   "name": "@phojie/nuxt-content-snippet-playground",
   "type": "module",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "dev": "nuxi dev",
