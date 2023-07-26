@@ -13,12 +13,12 @@ Easily import snippets in your Nuxt Content documents.
 
 ## Features
 
-<!-- Highlight some of the features your module provide here -->
-- ⛰ &nbsp;Foo
-- 🚠 &nbsp;Bar
-- 🌲 &nbsp;Baz
+- Import Code Snippets from any file
+- Includes Syntax Highlighting
 
-## Quick Setup
+### Installation
+
+**Warning:** This module requires Nuxt Content to work. Make sure to install it first.
 
 1. Add `nuxt-content-snippet` dependency to your project
 
@@ -45,7 +45,50 @@ export default defineNuxtConfig({
 
 That's it! You can now use Nuxt Content Snippet in your Nuxt app ✨
 
-## Development
+### Usage
+
+You can import snippets from any file in your project. The snippet will be highlighted using the file extension.
+
+By default, the snippet will be imported from the `base directory` of your project. You can also specify a relative path to the file.
+
+```md
+@@@ ./components/MyComponent.vue
+```
+
+```md
+@@@ @/components/MyComponent.vue
+```
+
+```md
+@@@ ../src/components/MyComponent.vue 
+```
+
+If you want to highlight a specific section of the file, you can specify the lines to highlight using the following syntax:
+
+```md
+@@@ ./components/MyComponent.vue {2-4}
+```
+
+You can also visit the [online playground](https://stackblitz.com/github/phojie/nuxt-content-snippet) to see it in action.
+
+### Configuration
+
+**Warning:** Work in progress
+
+Prefix is defined by default (`@@@`). You can change it in your `nuxt.config.ts` file:
+
+```ts
+export default defineNuxtConfig({
+  modules: [
+    'nuxt-content-snippet'
+  ],
+  contentSnippet: {
+    prefix: '<<<'
+  }
+})
+```
+
+### Development
 
 ```bash
 # Install dependencies
