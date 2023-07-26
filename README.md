@@ -16,7 +16,7 @@ Easily import snippets in your Nuxt Content documents.
 - Import Code Snippets from any file
 - Includes Syntax Highlighting
 
-### Installation
+## Installation
 
 ***Warning:*** This module requires Nuxt Content to work. Make sure to install it first.
 
@@ -45,11 +45,14 @@ export default defineNuxtConfig({
 
 That's it! You can now use Nuxt Content Snippet in your Nuxt app ✨
 
-### Usage
+## Usage
+
+### Importing
 
 You can import snippets from any file in your project. The snippet will be highlighted using the file extension.
 
-By default, the snippet will be imported from the `base directory` of your project. You can also specify a relative path to the file.
+***info:*** By default, the snippet will be imported from the `base directory` of your project. You can also specify a relative path to the file.
+
 
 ```md
 @@@ ./components/MyComponent.vue
@@ -63,15 +66,15 @@ By default, the snippet will be imported from the `base directory` of your proje
 @@@ ../src/components/MyComponent.vue 
 ```
 
+### Highlighting
+
 If you want to highlight a specific section of the file, you can specify the lines to highlight using the following syntax:
 
 ```md
 @@@ ./components/MyComponent.vue {2-4}
 ```
 
-You can also visit the [online playground](https://stackblitz.com/github/phojie/nuxt-content-snippet) to see it in action.
-
-### Configuration
+## Configuration
 
 ***Warning:*** Work in progress
 
@@ -88,7 +91,7 @@ export default defineNuxtConfig({
 })
 ```
 
-### Development
+## Development
 
 ```bash
 # Install dependencies
