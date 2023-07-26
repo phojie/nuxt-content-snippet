@@ -33,8 +33,6 @@
     "release": "bumpp package.json docs/package.json && pnpm -r publish",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "test": "vitest run",
-    "test:watch": "vitest watch",
     "typecheck": "nuxi typecheck",
     "prepare": "nuxi prepare docs"
   },
