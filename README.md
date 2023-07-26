@@ -18,7 +18,7 @@ Easily import snippets in your Nuxt Content documents.
 
 ### Installation
 
-**Warning:** This module requires Nuxt Content to work. Make sure to install it first.
+***Warning:*** This module requires Nuxt Content to work. Make sure to install it first.
 
 1. Add `nuxt-content-snippet` dependency to your project
 
@@ -73,7 +73,7 @@ You can also visit the [online playground](https://stackblitz.com/github/phojie/
 
 ### Configuration
 
-**Warning:** Work in progress
+***Warning:*** Work in progress
 
 Prefix is defined by default (`@@@`). You can change it in your `nuxt.config.ts` file:
 
