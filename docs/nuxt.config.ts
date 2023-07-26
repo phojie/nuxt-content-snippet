@@ -10,9 +10,4 @@ export default defineNuxtConfig({
   content: {
     documentDriven: true,
   },
-
-  // @ts-expect-error tsconfig
-  nuxtContentSnippet: {
-    prefix: '<<<',
-  },
 })
