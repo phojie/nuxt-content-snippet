@@ -29,7 +29,7 @@
     "prepack": "nuxt-module-build",
     "dev": "nuxi dev docs",
     "dev:prepare": "nuxt-module-build --stub && nuxi prepare docs",
-    "release": "bumpp package.json playground/package.json && pnpm -r publish",
+    "release": "bumpp package.json docs/package.json && pnpm -r publish",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "vitest run",
