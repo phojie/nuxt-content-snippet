@@ -1,15 +1,21 @@
 {
-  "name": "my-module",
-  "version": "1.0.0",
-  "description": "My new Nuxt module",
-  "repository": "your-org/my-module",
-  "license": "MIT",
+  "name": "@phojie/nuxt-content-snippet",
   "type": "module",
+  "version": "0.0.0",
+  "description": "Easily add code snippets to your Nuxt Content documents",
+  "author": "Phojie Rengel <phojrengel@gmail.com>",
+  "license": "MIT",
+  "funding": "https://github.com/sponsors/phojie",
+  "homepage": "https://github.com/phojie/nuxt-content-snippet#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phojie/nuxt-content-snippet.git"
+  },
   "exports": {
     ".": {
       "types": "./dist/types.d.ts",
-      "import": "./dist/module.mjs",
-      "require": "./dist/module.cjs"
+      "require": "./dist/module.cjs",
+      "import": "./dist/module.mjs"
     }
   },
   "main": "./dist/module.cjs",
@@ -31,15 +37,26 @@
     "@nuxt/kit": "^3.6.5"
   },
   "devDependencies": {
-    "@types/node": "^18.17.0",
+    "@antfu/eslint-config": "^0.39.8",
     "@nuxt/devtools": "latest",
-    "@nuxt/eslint-config": "^0.1.1",
     "@nuxt/module-builder": "^0.4.0",
     "@nuxt/schema": "^3.6.5",
     "@nuxt/test-utils": "^3.6.5",
+    "@types/node": "^18.17.0",
     "changelogen": "^0.5.4",
     "eslint": "^8.45.0",
+    "lint-staged": "^13.2.3",
     "nuxt": "^3.6.5",
+    "simple-git-hooks": "^2.9.0",
     "vitest": "^0.33.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
