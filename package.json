@@ -24,14 +24,18 @@
     "dist"
   ],
   "scripts": {
+    "build": "nuxt-module-build",
+    "build:docs": "nuxi generate docs",
     "prepack": "nuxt-module-build",
-    "dev": "nuxi dev playground",
-    "dev:build": "nuxi build playground",
-    "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground",
+    "dev": "nuxi dev docs",
+    "dev:prepare": "nuxt-module-build --stub && nuxi prepare docs",
     "release": "bumpp package.json playground/package.json && pnpm -r publish",
     "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "test": "vitest run",
-    "test:watch": "vitest watch"
+    "test:watch": "vitest watch",
+    "typecheck": "nuxi typecheck",
+    "prepare": "nuxi prepare docs"
   },
   "dependencies": {
     "@nuxt/kit": "^3.6.5"
