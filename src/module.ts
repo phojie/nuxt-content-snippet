@@ -1,19 +1,27 @@
-import { addPlugin, createResolver, defineNuxtModule } from '@nuxt/kit'
+import { addServerPlugin, createResolver, defineNuxtModule } from '@nuxt/kit'
 
 // Module options TypeScript interface definition
-export interface ModuleOptions {}
+export interface ModuleOptions {
+  /**
+   * The prefix to use for the snippet syntax.
+   * @default '@@@'
+   */
+  prefix?: string
+}
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
     name: '@phojie/@phojie/nuxt-content-snippet',
-    configKey: 'myModule',
+    configKey: 'nuxtContentSnippet',
   },
-  // Default configuration options of the Nuxt module
-  defaults: {},
+  defaults: {
+    prefix: '@@@',
+  },
   setup(options, nuxt) {
-    const resolver = createResolver(import.meta.url)
+    const { resolve } = createResolver(import.meta.url)
+    const runtimeDir = resolve('./runtime')
+    nuxt.options.build.transpile.push(runtimeDir) // remove this later
 
-    // Do not add the extension since the `.ts` will be transpiled to `.mjs` after `npm run prepack`
-    addPlugin(resolver.resolve('./runtime/plugin'))
+    addServerPlugin(resolve(runtimeDir, 'snippet'))
   },
 })
