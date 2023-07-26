@@ -17,7 +17,7 @@ export default defineNuxtModule<ModuleOptions>({
   defaults: {
     prefix: '@@@',
   },
-  setup(options, nuxt) {
+  setup() {
     const { resolve } = createResolver(import.meta.url)
     const runtimeDir = resolve('./runtime')
 
