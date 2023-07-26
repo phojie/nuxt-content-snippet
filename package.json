@@ -1,7 +1,7 @@
 {
   "name": "nuxt-content-snippet",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Easily add code snippets to your Nuxt Content documents",
   "author": "Phojie Rengel <phojrengel@gmail.com>",
   "license": "MIT",
