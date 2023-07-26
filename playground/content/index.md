@@ -2,4 +2,4 @@
 
 :new-button
 
-@@@ ./components/content/NewButton.vue
+@@@ ./playground/components/content/NewButton.vue
