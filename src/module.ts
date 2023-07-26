@@ -11,7 +11,7 @@ export interface ModuleOptions {
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: '@phojie/@phojie/nuxt-content-snippet',
+    name: '@phojie/nuxt-content-snippet',
     configKey: 'nuxtContentSnippet',
   },
   defaults: {

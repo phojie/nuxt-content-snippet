@@ -25,7 +25,7 @@
   ],
   "scripts": {
     "build": "nuxt-module-build",
-    "build:docs": "nuxi generate docs",
+    "build:dev": "nuxi generate docs",
     "prepack": "nuxt-module-build",
     "dev": "nuxi dev docs",
     "dev:prepare": "nuxt-module-build --stub && nuxi prepare docs",

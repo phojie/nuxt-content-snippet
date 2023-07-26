@@ -1,10 +1,12 @@
-export default defineNuxtConfig({
-  // https://github.com/nuxt-themes/docus
-  extends: '@nuxt-themes/docus',
+import nuxtContentSnippet from '../src/module'
 
+export default defineNuxtConfig({
   modules: [
-    // https://github.com/nuxt/devtools
     '@nuxt/devtools',
-    '../src/module',
+    '@nuxt/content',
+    nuxtContentSnippet,
   ],
+  content: {
+    documentDriven: true,
+  },
 })
