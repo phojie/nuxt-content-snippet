@@ -26,9 +26,9 @@
   ],
   "scripts": {
     "build": "nuxt-module-build",
-    "build:dev": "nuxi generate docs",
+    "build:dev": "nuxi generate playground",
     "prepack": "nuxt-module-build",
-    "dev": "nuxi dev docs",
+    "dev": "nuxi dev playground",
     "dev:prepare": "nuxt-module-build --stub && nuxi prepare docs",
     "release": "bumpp package.json docs/package.json && pnpm -r publish",
     "lint": "eslint .",
