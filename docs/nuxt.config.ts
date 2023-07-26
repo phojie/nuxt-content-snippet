@@ -6,7 +6,13 @@ export default defineNuxtConfig({
     '@nuxt/content',
     nuxtContentSnippet,
   ],
+
   content: {
     documentDriven: true,
+  },
+
+  // @ts-expect-error tsconfig
+  nuxtContentSnippet: {
+    prefix: '<<<',
   },
 })

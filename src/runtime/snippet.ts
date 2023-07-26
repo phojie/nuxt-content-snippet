@@ -3,11 +3,11 @@ import * as fs from 'node:fs'
 // @ts-expect-error tsconfig
 import { defineNitroPlugin } from '#imports'
 
-// Set your desired default prefix here 🚀
-const defaultPrefix = '@@@'
+export default defineNitroPlugin((nitro: any) => {
+// will be configurable in the future
+  const defaultPrefix = '@@@'
 
-export default defineNitroPlugin((nitroApp: any) => {
-  nitroApp.hooks.hook('content:file:beforeParse', (file: any) => {
+  nitro.hooks.hook('content:file:beforeParse', (file: any) => {
     if (file._id.endsWith('.md')) {
       const snippetMatch = file.body.match(new RegExp(`^${defaultPrefix}\\s([^{\\s]+)(?:\\s(.+))?`, 'gm'))
 
