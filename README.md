@@ -129,3 +129,11 @@ npm run release
 
 [nuxt-src]: https://img.shields.io/badge/Nuxt-18181B?logo=nuxt.js
 [nuxt-href]: https://nuxt.com
+
+## Sponsors
+
+<p align="center">
+  <a href="https://cdn.jsdelivr.net/gh/phojie/static/sponsors.svg">
+    <img src='https://cdn.jsdelivr.net/gh/phojie/static/sponsors.svg'/>
+  </a>
+</p>
