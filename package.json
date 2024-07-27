@@ -2,7 +2,7 @@
   "name": "nuxt-content-snippet",
   "type": "module",
   "version": "0.0.2",
-  "packageManager": "pnpm@8.6.5",
+  "packageManager": "pnpm@8.15.9",
   "description": "Easily import code snippets to your Nuxt Content documents",
   "author": "Phojie Rengel <phojrengel@gmail.com>",
   "license": "MIT",
@@ -29,6 +29,7 @@
     "build:dev": "nuxi generate playground",
     "prepack": "nuxt-module-build",
     "dev": "nuxi dev playground",
+    "stub": "nuxt-module-build --stub",
     "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground",
     "release": "bumpp package.json playground/package.json && pnpm -r publish",
     "lint": "eslint .",
@@ -37,20 +38,20 @@
     "prepare": "nuxi prepare playground"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.6.5"
+    "@nuxt/kit": "^3.12.4"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.39.8",
     "@nuxt/devtools": "latest",
     "@nuxt/module-builder": "^0.4.0",
-    "@nuxt/schema": "^3.6.5",
-    "@nuxt/test-utils": "^3.6.5",
-    "@types/node": "^18.17.0",
-    "bumpp": "^9.1.1",
-    "eslint": "^8.45.0",
-    "lint-staged": "^13.2.3",
-    "nuxt": "^3.6.5",
-    "simple-git-hooks": "^2.9.0"
+    "@nuxt/schema": "^3.12.4",
+    "@nuxt/test-utils": "^3.14.0",
+    "@types/node": "^18.19.42",
+    "bumpp": "^9.4.1",
+    "eslint": "^8.57.0",
+    "lint-staged": "^13.3.0",
+    "nuxt": "^3.12.4",
+    "simple-git-hooks": "^2.11.1"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
