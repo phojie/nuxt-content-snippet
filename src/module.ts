@@ -17,10 +17,11 @@ export default defineNuxtModule<ModuleOptions>({
   defaults: {
     prefix: '@@@',
   },
-  setup() {
+  setup(options, nuxt) {
     const { resolve } = createResolver(import.meta.url)
     const runtimeDir = resolve('./runtime')
 
+    nuxt.options.runtimeConfig.prefix = options.prefix || '@@@'
     addServerPlugin(resolve(runtimeDir, 'snippet'))
   },
 })

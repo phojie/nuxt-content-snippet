@@ -76,8 +76,6 @@ If you want to highlight a specific section of the file, you can specify the lin
 
 ## Configuration
 
-***Warning:*** Work in progress
-
 Prefix is defined by default (`@@@`). You can change it in your `nuxt.config.ts` file:
 
 ```ts

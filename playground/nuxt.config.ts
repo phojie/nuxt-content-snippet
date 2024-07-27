@@ -10,4 +10,10 @@ export default defineNuxtConfig({
   content: {
     documentDriven: true,
   },
+
+  contentSnippet: {
+    prefix: '@@@',
+  },
+
+  compatibilityDate: '2024-07-28',
 })

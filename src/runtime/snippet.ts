@@ -1,15 +1,14 @@
 import * as fs from 'node:fs'
 
 // @ts-expect-error tsconfig
-import { defineNitroPlugin } from '#imports'
+import { defineNitroPlugin, useRuntimeConfig } from '#imports'
 
 export default defineNitroPlugin((nitro: any) => {
-// will be configurable in the future
-  const defaultPrefix = '@@@'
+  const defaultPrefix = useRuntimeConfig().prefix
 
   nitro.hooks.hook('content:file:beforeParse', (file: any) => {
     if (file._id.endsWith('.md')) {
-      const snippetMatch = file.body.match(new RegExp(`^${defaultPrefix}\\s([^{\\s]+)(?:\\s(.+))?`, 'gm'))
+      const snippetMatch = file.body.match(new RegExp(`^\\s*${defaultPrefix}\\s([^{\\s]+)(?:\\s(.+))?`, 'gm'))
 
       if (!snippetMatch)
         return
