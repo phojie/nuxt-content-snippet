@@ -1,7 +1,7 @@
 {
   "name": "nuxt-content-snippet",
   "type": "module",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "packageManager": "pnpm@8.15.9",
   "description": "Easily import code snippets to your Nuxt Content documents",
   "author": "Phojie Rengel <phojrengel@gmail.com>",
